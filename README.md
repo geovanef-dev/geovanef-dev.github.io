@@ -8,4 +8,4 @@ Este é meu portfólio pessoal desenvolvido com HTML, CSS e JavaScript.
 - JavaScript
 
 ## 🌐 Site
-https://geovanefprado.github.io
+https://geovanef-dev.github.io/
