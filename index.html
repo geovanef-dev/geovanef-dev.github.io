@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geovane Fernandes — Dev</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">geovane<span class="accent">.</span>dev</div>
+      <ul class="nav-links">
+        <li><a href="#sobre">sobre</a></li>
+        <li><a href="#projetos">projetos</a></li>
+        <li><a href="#curriculo">currículo</a></li>
+        <li><a href="#contato">contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+
+      <div class="hero-left">
+
+        <!-- =============================================
+             📸 FOTO DE PERFIL
+         ============================================= -->
+        <div class="avatar-wrap">
+          <div class="avatar-ring">
+            <img
+              src="geovane.jpeg"
+              alt="Foto de Geovane Fernandes"
+              class="avatar-img"
+              id="avatar-img"
+              onerror="this.style.display='none'; document.getElementById('avatar-placeholder').style.display='flex';"
+             src="geovane.jpeg" class="foto-perfil">            
+              />
+            <div class="avatar-placeholder" id="avatar-placeholder">
+            </div>
+          </div>
+          <div class="avatar-status">
+            <span class="status-dot"></span>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          <span>Geovane</span>
+          <span>Fernandes</span>
+          <span class="accent">do Prado</span>
+        </h1>
+        <p class="hero-role"><span class="mono">// </span>Desenvolvedor Fullstack em formação</p>
+        <p class="hero-desc">
+          17 anos · estudante de ADS · apaixonado por construir
+          coisas do zero com Java e tecnologias web.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projetos" class="btn-primary">Ver projetos</a>
+
+          <!-- =============================================
+               📄 BOTÃO DE DOWNLOAD DO CURRÍCULO (HERO)
+               ---------------------------------------------
+               Para ativar:
+               1. Coloque o PDF do currículo na mesma pasta
+               2. Substitua  SEU-CURRICULO.pdf  pelo nome
+                  do arquivo (ex: curriculo-geovane.pdf)
+               ============================================= -->
+          <a href="curriculo.pdf" download class="btn-ghost" id="btn-curriculo-hero">
+            Baixar currículo
+          </a>
+        </div>
+
+        <div class="hero-scroll">
+          <span class="mono">scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="code-window">
+          <div class="code-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="code-filename">Geovane.java</span>
+          </div>
+          <pre class="code-body"><span class="kw">public class</span> <span class="cls">Geovane</span> {
+
+  <span class="kw">private int</span>    age   = <span class="num">17</span>;
+  <span class="kw">private String</span> curso = <span class="str">"ADS"</span>;
+  <span class="kw">private String</span> foco  = <span class="str">"Fullstack"</span>;
+
+  <span class="kw">public</span> String[] <span class="fn">skills</span>() {
+    <span class="kw">return new</span> String[] {
+      <span class="str">"Java"</span>, <span class="str">"HTML"</span>,
+      <span class="str">"CSS"</span>,  <span class="str">"JavaScript"</span>
+    };
+  }
+
+  <span class="kw">public boolean</span> <span class="fn">disponivel</span>() {
+    <span class="kw">return true</span>; <span class="cm">// sempre!</span>
+  }
+}</pre>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="sec-label">01 — sobre</div>
+      <h2 class="sec-title">Quem sou eu</h2>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p>Tenho <strong>17 anos</strong> e estou no início de uma jornada que já me apaixonou completamente. Curso <strong>Análise e Desenvolvimento de Sistemas</strong> e meu objetivo é dominar o desenvolvimento <strong>fullstack</strong>.</p>
+          <p>Acredito que a melhor forma de aprender é colocar a mão na massa. Cada projeto que construo me ensina mais do que qualquer livro poderia.</p>
+          <p>Atualmente focado em <strong>JavaScript</strong>, explorando orientação a objetos e algoritmos, e expandindo para o mundo web.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-num accent">17</span>
+            <span class="stat-desc">anos de idade</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">3+</span>
+            <span class="stat-desc">projetos no GitHub</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">ADS</span>
+            <span class="stat-desc">curso em andamento</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">∞</span>
+            <span class="stat-desc">vontade de aprender</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-block">
+        <p class="mono skills-label">// stack &amp; ferramentas</p>
+        <div class="skills-list">
+          <div class="skill-pill">HTML</div>
+          <div class="skill-pill">CSS</div>
+          <div class="skill-pill">JavaScript</div>
+          <div class="skill-pill">GitHub</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <div class="sec-label">02 — projetos</div>
+      <h2 class="sec-title">O que eu construí</h2>
+      <div class="projetos-grid">
+
+        <a class="projeto reveal" href="https://github.com/geovanefprado/calculadora-python" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <div class="proj-lang"><span class="lang-dot java-dot"></span><span class="mono">Java</span></div>
+            <svg class="proj-arrow" viewBox="0 0 16 16" fill="none">
+              <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Calculadora em Java</h3>
+          <p>Calculadora com operações aritméticas implementada com OOP. Entrada e saída via terminal, com tratamento de exceções.</p>
+          <div class="proj-tags"><span>Java</span><span>OOP</span><span>Terminal</span></div>
+        </a>
+
+        <a class="projeto reveal" href="https://github.com/geovanefprado/jogo-da-forca" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <div class="proj-lang"><span class="lang-dot java-dot"></span><span class="mono">Java</span></div>
+            <svg class="proj-arrow" viewBox="0 0 16 16" fill="none">
+              <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Jogo da Forca</h3>
+          <p>Jogo interativo no terminal. O jogador adivinha a palavra secreta letra a letra, com limite de tentativas e feedback em tempo real.</p>
+          <div class="proj-tags"><span>Java</span><span>Lógica</span><span>Terminal</span></div>
+        </a>
+
+        <a class="projeto reveal" href="https://github.com/geovanefprado" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <div class="proj-lang"><span class="lang-dot web-dot"></span><span class="mono">HTML / CSS / JS</span></div>
+            <svg class="proj-arrow" viewBox="0 0 16 16" fill="none">
+              <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Portfólio Pessoal</h3>
+          <p>Este portfólio! Desenvolvido com HTML, CSS e JS puro. Cursor customizado, animações de scroll e layout totalmente responsivo.</p>
+          <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </a>
+
+        <div class="projeto reveal projeto-wip">
+          <div class="proj-head">
+            <div class="proj-lang"><span class="lang-dot java-dot"></span><span class="mono">Java</span></div>
+            <span class="wip-tag">em breve</span>
+          </div>
+          <h3>Próximo projeto</h3>
+          <p>Sempre construindo algo novo. Fique de olho no GitHub para novidades em breve.</p>
+          <div class="proj-tags"><span>Em desenvolvimento...</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRÍCULO -->
+  <section class="section" id="curriculo">
+    <div class="container">
+      <div class="sec-label">03 — currículo</div>
+      <h2 class="sec-title">Meu currículo</h2>
+
+      <div class="curriculo-layout">
+
+        <!-- Preview do PDF -->
+        <!-- =============================================
+             📄 VISUALIZAÇÃO DO CURRÍCULO
+             ---------------------------------------------
+             Para exibir seu currículo aqui:
+             1. Coloque o PDF na mesma pasta do index.html
+             2. Substitua  SEU-CURRICULO.pdf  pelo nome
+                do arquivo nos dois lugares abaixo.
+             ============================================= -->
+        <div class="cv-preview-wrap">
+          <div class="cv-preview" id="cv-preview">
+            <iframe
+              src="curriculo.pdf"
+              class="cv-iframe"
+              id="cv-iframe"
+              title="Currículo de Geovane Fernandes"
+            ></iframe>
+            <!-- Aparece quando o PDF não for encontrado -->
+            <div class="cv-placeholder" id="cv-placeholder">
+              <div class="cv-placeholder-icon">📄</div>
+              <p class="cv-placeholder-title">Seu currículo aparece aqui</p>
+              <p class="cv-placeholder-desc">
+                Coloque o PDF na pasta do projeto<br>
+                e atualize <span class="mono">src="curriculo.pdf"</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Informações e botão de download -->
+        <div class="cv-info">
+          <div class="cv-info-card">
+            <div class="cv-info-label mono">// sobre o documento</div>
+            <h3>Geovane Fernandes do Prado</h3>
+            <p>Desenvolvedor em formação, estudante de Análise e Desenvolvimento de Sistemas.</p>
+
+            <div class="cv-details">
+              <div class="cv-detail-row">
+                <span class="cv-detail-icon">🎓</span>
+                <span>ADS — em andamento</span>
+              </div>
+              <div class="cv-detail-row">
+                <span class="cv-detail-icon">💻</span>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+              <div class="cv-detail-row">
+                <span class="cv-detail-icon">📍</span>
+                <span>Brasil</span>
+              </div>
+              <div class="cv-detail-row">
+                <span class="cv-detail-icon">✉️</span>
+                <span>geovanef.tecnico@mail.com</span>
+              </div>
+            </div>
+
+            <!-- =========================================
+                 📥 BOTÃO DE DOWNLOAD
+                 -------------------------------------------
+                 Substitua SEU-CURRICULO.pdf pelo nome
+                 do seu arquivo PDF.
+                 O atributo download="..." define o nome
+                 que o arquivo terá ao ser baixado.
+                 ========================================= -->
+            <a
+              href="curriculo.pdf"
+              download="curriculo-geovane-fernandes.pdf"
+              class="btn-primary btn-block-cv"
+              id="btn-download-cv"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 1v9M8 10l-3-3M8 10l3-3M2 13h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Baixar currículo (PDF)
+            </a>
+
+            <a href="mailto:geovanef.tecnico@mail.com" class="btn-ghost btn-block-cv" style="margin-top: 10px;">
+              Solicitar por e-mail
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="sec-label">04 — contato</div>
+      <h2 class="sec-title">Vamos conversar</h2>
+      <div class="contato-box">
+        <p>Aberto a colaborações, feedbacks e oportunidades de aprendizado. Pode mandar um e-mail ou me encontrar no GitHub.</p>
+        <div class="contato-actions">
+          <a href="mailto:geovanef.tecnico@mail.com" class="btn-primary">geovanef.tecnico@mail.com</a>
+          <a href="https://github.com/geovanefprado" target="_blank" rel="noopener" class="btn-ghost">GitHub →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-row">
+      <span class="mono">gfp<span class="accent">.</span>dev</span>
+      <span class="mono footer-copy">© 2025 — Geovane Fernandes do Prado</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
